@@ -1,0 +1,808 @@
+.header__button,
+body {
+	font-family: Montserrat, sans-serif
+}
+
+.link__item,
+body {
+	color: #000
+}
+
+.link__item,
+.link__item:hover {
+	text-decoration: none;
+	line-height: 30px
+}
+
+* {
+	box-sizing: border-box
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+b,
+big,
+blockquote,
+body,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+font,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+object,
+ol,
+p,
+pre,
+q,
+s,
+samp,
+small,
+span,
+strike,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+th,
+thead,
+tr,
+tt,
+u,
+ul,
+var {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	border: 0;
+	outline: 0;
+	background: 0 0
+}
+
+.header__button,
+.link__item,
+.link__item:hover {
+	font-size: 15px;
+	font-weight: 600
+}
+
+img {
+	margin: 0;
+	padding: 0
+}
+
+.container {
+	max-width: 1320px;
+	margin: 0 auto
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 25px
+}
+
+.header__link {
+	display: flex
+}
+
+.link__item:hover {
+	color: #e51937
+}
+
+.link__item:not(:last-child) {
+	margin-right: 45px
+}
+
+.header__button {
+	color: #000;
+	border: none;
+	outline: 0;
+	cursor: pointer;
+	background: linear-gradient(#e51937 0 0) 50% calc(-3px - 100%)/var(--w, 0)200% no-repeat;
+	transition: .3s, background-size .3s .3s;
+	padding: 12px;
+	margin-right: 30px
+}
+
+.header__button:hover {
+	--w: 100%;
+	background-position: 50% 0;
+	color: #fff;
+	transition: .3s, background-position .3s .3s, color .3s .3s
+}
+
+.button__group {
+	display: flex;
+	align-items: center
+}
+
+.header__menu {
+	display: flex
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 40px
+}
+
+.hero__group {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute
+}
+
+.hero__title {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 90px;
+	line-height: 110px
+}
+
+.hero__subtitle {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px
+}
+
+.hero__img_tesla {
+	width: 100%
+}
+
+.hero__characteristic,
+.speed_and_road {
+	display: flex
+}
+
+.hero__speed__characteristic {
+	display: flex;
+	align-items: center
+}
+
+.speedometr {
+	width: 46px;
+	height: 34px;
+	margin-right: 3px
+}
+
+.hero__acceleration_time {
+	font-weight: 600;
+	font-size: 35px;
+	line-height: 26px;
+	display: flex;
+	flex-direction: column
+}
+
+.hero__speed__unit {
+	font-weight: 600;
+	font-size: 20px
+}
+
+.hero__road__characteristic {
+	display: flex;
+	margin-left: 81px;
+	margin-right: 105px
+}
+
+.road {
+	width: 30px;
+	height: 50px;
+	margin-right: 3px
+}
+
+.speed-range {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px
+}
+
+.hero__power_reserv {
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 35px;
+	line-height: 26px;
+	display: flex;
+	flex-direction: column
+}
+
+.order-button,
+.test-drive-button {
+	font-family: Montserrat, sans-serif
+}
+
+.hero__reserv_unit {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px
+}
+
+.power-reserv {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px
+}
+
+.test-drive-button,
+.test-drive-text {
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 16px;
+	cursor: pointer;
+	text-align: center
+}
+
+.test-drive {
+	font-size: 13px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px
+}
+
+.tesla-icon {
+	width: 22px;
+	height: 22px;
+	margin-right: 7px;
+	-webkit-filter: drop-shadow(0 3px 2px rgb(119, 119, 119));
+	filter: drop-shadow(0 3px 2px rgb(92, 92, 92));
+	background-color: transparent;
+	cursor: pointer
+}
+
+.test-drive-text {
+	margin-right: 40px;
+	text-shadow: 2px 3px 3px rgba(0, 0, 0, .3)
+}
+
+.test-drive-button {
+	width: 160px;
+	height: 40px;
+	background-color: #fff;
+	border: 2px solid #e51937;
+	color: #e51937;
+	transition: ease-in-out .3s;
+	outline: 0
+}
+
+.test-drive-button:hover {
+	transition: background-color .5s, color .5s;
+	background-color: #e51937;
+	color: #fff
+}
+
+.arrow-down-button {
+	background-color: #fff;
+	border: none
+}
+
+.article__img {
+	margin: 0;
+	background-image: url(../img/tesla-cabin.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 844px;
+	width: 100%
+}
+
+.article__aside {
+	background-color: #e51937;
+	max-width: 440px;
+	color: #fff;
+	font-weight: 600;
+	font-size: 30px;
+	padding: 51px 50px 63px
+}
+
+.article__title {
+	margin-left: 60px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 70px;
+	line-height: 85px;
+	color: #e51937;
+	position: absolute
+}
+
+.article__group {
+	margin-top: 37px;
+	display: flex;
+	align-items: flex-end
+}
+
+.aside__title {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 37px
+}
+
+.aside__text {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px;
+	margin-top: 11px
+}
+
+.aside__privelege {
+	margin-top: 54px;
+	display: flex;
+	justify-content: end;
+	flex-direction: column
+}
+
+.privelege__item {
+	display: flex;
+	align-items: center;
+	margin-top: 35px
+}
+
+.privelege__item:last-child {
+	margin-bottom: 171px
+}
+
+.privelege__item-text {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	margin-left: 20px
+}
+
+.privelege__item-subtitle {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px
+}
+
+span.privelege__item-1 {
+	font-weight: 600;
+	font-size: 35px;
+	line-height: 43px
+}
+
+.left-side__subtitle {
+	margin-top: 16px;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px
+}
+
+.protection-assessment {
+	margin-top: 55px
+}
+
+.front-protection:first-child {
+	margin-top: 32px
+}
+
+.front-protection {
+	display: flex;
+	width: 291px;
+	justify-content: space-between;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 21px;
+	margin-bottom: 16px
+}
+
+.lowercase {
+	font-weight: 700;
+	color: #f7bac3;
+	font-size: 10px;
+	text-transform: lowercase;
+	padding-right: 31px
+}
+
+.more-details,
+.order-button {
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 16px;
+	cursor: pointer
+}
+
+.reliability {
+	margin-top: 40px;
+	margin-bottom: 52px;
+	margin-left: 10px
+}
+
+.learn-more {
+	display: flex
+}
+
+.more-details {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	margin-right: 28px
+}
+
+.order-icon {
+	margin-right: 7px
+}
+
+.order-button {
+	width: 160px;
+	height: 40px;
+	background-color: #e51937;
+	border: 2px solid #fff;
+	color: #fff;
+	text-transform: uppercase;
+	transition: ease-in-out .3s
+}
+
+.order-button:hover {
+	transition: background-color .5s, color .5s;
+	background-color: #fff;
+	color: #000
+}
+
+.car-frame-text {
+	padding-top: 75px;
+	position: absolute;
+	left: 565px;
+	font-weight: 600;
+	font-size: 166px;
+	line-height: 245px;
+	color: #e51937;
+	opacity: .1
+}
+
+.car-frame-img {
+	position: absolute;
+	padding-top: 180px;
+	left: 340px;
+	width: 67%;
+	height: auto
+}
+
+.arrow-down {
+	display: flex;
+	margin-top: 37px
+}
+
+.link__item_underline {
+	border-bottom: solid 2px #e51937;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	color: #e51937
+}
+
+@media screen and (min-width:1024px) and (max-width:1280px) {
+	.article__group {
+		margin-top: 170px
+	}
+}
+
+@media screen and (max-width:1024px) {
+
+	.header__button,
+	.header__link {
+		display: none
+	}
+}
+
+@media screen and (max-width:1280px) {
+	.hero {
+		height: 600px
+	}
+
+	.link__item:not(:last-child) {
+		margin-right: 35px
+	}
+
+	.header__button,
+	.link__item,
+	.link__item:hover {
+		font-size: 14px
+	}
+
+	.logo-tesla {
+		width: 85%
+	}
+
+	.car-frame-text {
+		padding-top: 75px;
+		position: absolute;
+		left: 480px;
+		font-weight: 600;
+		font-size: 133px;
+		line-height: 244px;
+		color: #e51937;
+		opacity: .1
+	}
+
+	.hero__img {
+		padding-top: 50px
+	}
+
+	.hero__characteristic {
+		display: block
+	}
+
+	.hero__road__characteristic {
+		margin-right: 0
+	}
+
+	.test-drive {
+		align-items: center;
+		justify-content: center;
+		margin-top: 34px
+	}
+
+	.test-drive-text {
+		margin-right: 34px
+	}
+}
+
+@media screen and (max-width:1440px) {
+	.header {
+		padding: 0 30px 0 15px
+	}
+
+	.hero__title {
+		font-size: 75px
+	}
+
+	.article__group {
+		margin-top: 37px;
+		display: block;
+		align-items: flex-end
+	}
+
+	.car-frame-text {
+		padding-top: 0;
+		left: 82px;
+		font-size: 148px
+	}
+
+	.article__aside {
+		background-color: #e51937;
+		max-width: 10000px;
+		color: #fff;
+		font-weight: 600;
+		font-size: 30px;
+		padding: 55px 34px 60px
+	}
+
+	.article__title {
+		right: 58px
+	}
+
+	.article__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-around
+	}
+
+	.aside__privelege {
+		margin-top: 0
+	}
+
+	.privelege__item:last-child {
+		margin-bottom: 0
+	}
+
+	.learn-more {
+		display: flex;
+		justify-content: center;
+		margin-top: 75px
+	}
+
+	.privelege__item-text {
+		max-width: 171px
+	}
+
+	.article__container {
+		padding-right: 40px
+	}
+
+	.aside__text {
+		width: 300px;
+		margin-top: 20px
+	}
+
+	.left-side__subtitle {
+		width: 316px
+	}
+
+	.reliability {
+		display: none
+	}
+
+	.hero__power_reserv {
+		font-size: 26px
+	}
+
+	.car-frame-img {
+		position: relative;
+		width: 100%;
+		height: auto;
+		padding-top: 0;
+		left: 0;
+		margin: 76px 0 37px
+	}
+
+	.car-frame {
+		display: flex;
+		justify-content: center
+	}
+}
+
+@media screen and (max-width:768px) {
+
+	.article__container,
+	.article__inner {
+		flex-direction: column
+	}
+
+	.hero__title {
+		font-size: 50px;
+		line-height: 61px
+	}
+
+	.hero__subtitle {
+		font-size: 10px;
+		line-height: 12px
+	}
+
+	.hero__img {
+		padding-top: 100px
+	}
+
+	.aside__privelege {
+		flex-wrap: wrap;
+		justify-content: center
+	}
+
+	.article__container {
+		padding-right: 0;
+		display: flex;
+		align-items: baseline
+	}
+
+	.hero__acceleration_time,
+	.hero__road__characteristic {
+		font-size: 27px
+	}
+
+	.hero__reserv_unit,
+	.hero__speed__unit {
+		font-size: 15px
+	}
+
+	.power-reserv,
+	.speed-range {
+		font-size: 10px
+	}
+
+	.aside__privelege {
+		margin-top: 54px;
+		display: flex;
+		flex-direction: column
+	}
+
+	.car-frame-text {
+		padding-top: 0;
+		left: 0;
+		font-size: 105px
+	}
+}
+
+@media screen and (max-width:576px) {
+	.article__img {
+		height: 320px;
+		width: 100%
+	}
+
+	.article__title {
+		display: none
+	}
+
+	.hero {
+		height: 450px
+	}
+
+	.car-frame-text {
+		padding-top: 0;
+		left: 0;
+		font-size: 104px
+	}
+}
+
+@media screen and (max-width:426px) {
+	.car-frame-text {
+		padding-top: 0;
+		left: 0;
+		font-size: 90px
+	}
+}
+
+@media screen and (max-width:376px) {
+	.car-frame-text {
+		padding-top: 0;
+		left: 0;
+		font-size: 77px
+	}
+
+	.header {
+		padding: 0 20px 0 0
+	}
+
+	.hero__acceleration_time,
+	.hero__power_reserv {
+		font-size: 26px
+	}
+
+	.test-drive-text {
+		font-size: 11px
+	}
+
+	.aside__title,
+	.protection-assessment {
+		font-size: 26px
+	}
+
+	.test-drive-button {
+		width: 139px
+	}
+
+	.article__container {
+		align-items: baseline
+	}
+
+	.left-side__subtitle {
+		width: 282px
+	}
+
+	.article__aside {
+		padding: 55px 20px
+	}
+
+	.aside__text {
+		width: 274px
+	}
+}
+
+@media screen and (min-width:1440px) {
+	.car-frame-text {
+		left: 620px;
+		font-size: 200px
+	}
+}
